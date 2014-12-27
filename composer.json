@@ -1,0 +1,26 @@
+{
+    "name": "czogori/rentgen-cli",
+    "type": "library",
+    "description": "Database abstraction layer for information and manipulation schema",
+    "keywords": [ "database", "dbal" ],
+    "homepage": "https://github.com/czogori/Rentgen",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "czogori/rentgen": "*",
+        "symfony/console": "~2.5"
+    },
+    "authors": [
+        {
+            "name": "Arek Jaskólski",
+            "email": "arek.jaskolski@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Rentgen": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "bin": ["bin/rentgen"]
+}

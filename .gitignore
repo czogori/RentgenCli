@@ -1,0 +1,5 @@
+*.swp
+composer.lock
+rentgen.yml
+tags
+vendor
