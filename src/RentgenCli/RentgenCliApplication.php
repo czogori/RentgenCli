@@ -19,12 +19,12 @@ class RentgenCliApplication extends Application
         parent::__construct('Rentgen - Database info and schema manipulation', '0.0.1');
 
         $rentgen = new Rentgen();
-        $container = $rentgen->getContainer();
+        //$container = $rentgen->getContainer();
 
         $this->addCommands(array(
-            new TableInfoCommand('table', $container),
-            new ListTablesCommand('tables', $container),
-            new ConfigCommand('config', $container),
+            new TableInfoCommand('table', $rentgen),
+            new ListTablesCommand('tables', $rentgen),
+            new ConfigCommand('config', $rentgen),
         ));
     }
 }
